@@ -22,7 +22,7 @@ class BusRequest extends ValidatorRequest
     public function rules(): array
     {
         return [
-            'car_name' => ['required', 'string', 'min:10', 'max:50'],
+            'car_name' => ['required', 'string', 'min:3', 'max:50'],
             'number_of_passengers' => ['required', 'integer', 'min:15', 'max:50'],
             'starting_point' => ['required', 'string', 'min:5', 'max:50'],
             'ending_point' => ['required', 'string', 'min:5', 'max:50'],

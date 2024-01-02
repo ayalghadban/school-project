@@ -27,7 +27,7 @@ class DriverInformationRequest extends ValidatorRequest
             'last_name' => ['required', 'string', 'min:3'],
             'father_name' => ['required', 'string', 'min:3'],
             'mother_name' => ['required', 'string', 'min:3'],
-            'birthday_date' =>['required', 'date'],
+            'birthday_date' =>['required', ],
             'gender' => ['required', 'boolean'],
             'national_identity_number' => ['required','integer'],
             'phone_number' => ['required'],

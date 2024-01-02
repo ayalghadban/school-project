@@ -53,7 +53,8 @@ class InformationAboutDriverController extends ResponseErrorController
         }
         catch(\Exception $ex)
         {
-            return $this->sendError(__('messages.create_error'), 500);
+            //return $this->sendError(__('messages.create_error'), 500);
+            return $ex;
         }
     }
 

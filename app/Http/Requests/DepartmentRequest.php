@@ -6,12 +6,6 @@ namespace App\Http\Requests;
 class DepartmentRequest extends ValidatorRequest
 {
     
-    public function authorize(): bool
-    {
-        return true;
-    }
-
-
     public function rules(): array
     {
         return [

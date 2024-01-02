@@ -8,11 +8,8 @@ use App\Models\Course;
 class CourseService
 {
 
-    public static function get_all_courses($request)
+    public static function get_all_courses()
     {
-
-
-        $per_page = $request->per_page ?? 8 ;
         $course = [];
         $course = Course::all();
         return $course;
@@ -22,8 +19,6 @@ class CourseService
     {
         $course = [];
         $course = Course::where('id',$id)->get();
-
-
         return $course;
     }
 
@@ -49,7 +44,7 @@ class CourseService
                 'department_id' => $request->department_id
             ]);
 
-            // return new course updated 
+            // return new course updated
         return $course;
     }
 
